@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>rgzs'counter</title>
+</head>
+<body>
+    <header id="header">
+        <input type="text" id="hour" value="0">
+        <input type="text" id="minute" value="0">
+        <input type="text" id="second" value="0">
+        <label id="hourlabel">时</label>
+        <label id="minutelabel">分</label>
+        <label id="secondlabel">秒</label>
+        <div id="hint" hidden>正在倒计时 00:00:00</div>
+        <input type="button" id="countup" value="开始正计时">
+        <input type="button" id="countdown" value="开始倒计时">
+        <input type="button" id="clear" value="清空倒计时" hidden>
+        <input type="button" id="restart" value="重新再计时" hidden>
+        <input type="button" id="resume" value="恢复计时器" hidden>
+        <input type="button" id="pause" value="暂停计时器" hidden>
+        <div id="box">
+            <time id="time">00:00:00</time>
+        </div>
+        <script src="app.js" type="text/javascript"></script>
+    </header>
+</body>
+</html>

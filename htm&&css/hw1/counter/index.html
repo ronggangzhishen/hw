@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>rgzs'counter</title>
+</head>
+<body>
+    <header id="header">
+        <input type="text" id="counthour" value="0">
+        <input type="text" id="countminuit" value="0">
+        <input type="text" id="countsecond" value="0">
+        <label id="hour">时</label>
+        <label id="minuit">分</label>
+        <label id="second">秒</label>
+        <input type="button" id="increase" value="开始正计时">
+        <input type="button" id="decrease" value="开始倒计时">
+        <div id="box">
+            <time id="time">00:00:00</time>
+        </div>
+
+        <script type="text/javascript">
+            //计时器
+            var setup,setdown;
+            var scale = 60, onesecond = 1000;
+            var secondnum = 0, minuitnum = 0, hournum=0;
+            var temp;
+            function syn() {
+                temp = new String;
+                if ( hournum < 10 ) {
+                    temp = temp + "0";
+                    temp = temp + hournum;
+                } else
+                    temp = temp + hournum;
+                temp+= ":";
+                if ( minuitnum < 10 ) {
+                    temp = temp + "0";
+                    temp = temp + minuitnum;
+                } else
+                    temp = temp + minuitnum;
+                temp+= ":";
+                if ( secondnum < 10 ) {
+                    temp = temp + "0";
+                    temp = temp + secondnum;
+                } else
+                    temp = temp + secondnum;
+
+                document.getElementById("time").innerText = temp;    
+                /*document.getElementById("time").innerText =
+                    hournum
+                    + ":" 
+                    + minuitnum 
+                    + ":" 
+                    + secondnum;*/
+            }
+            function startCountup() {
+                syn();
+                document.getElementById('countsecond').value = secondnum;
+                document.getElementById('countminuit').value = minuitnum;
+                document.getElementById('counthour').value = hournum;
+                if ( secondnum + 1 == scale ) {
+                    secondnum = 0;
+                    minuitnum++;
+                } else
+                    secondnum++;
+                if ( minuitnum + 1 == scale ) {
+                    minuitnum = 0;
+                    hournum++;
+                } 
+                setup = setTimeout("startCountup()", onesecond);
+            }
+            function startCountdown() {
+                syn();
+                document.getElementById('countsecond').value = secondnum;
+                document.getElementById('countminuit').value = minuitnum;
+                document.getElementById('counthour').value = hournum;
+                if ( secondnum  == 0 && minuitnum > 0 ) {
+                    secondnum = scale - 1;
+                    minuitnum--;
+                } else if (secondnum > 0)
+                    secondnum--;
+                //else no minus time, do nothing
+                if ( minuitnum == 0 && hournum > 0 ) {
+                    minuitnum = scale - 1;
+                    hournum--;
+                }
+                setdown = setTimeout("startCountdown()", onesecond);
+            }
+            
+            var increase = document.getElementById("increase");
+            increase.onclick=function() {
+                startCountup();
+                clearTimeout(setdown);
+            }
+            var decrease = document.getElementById("decrease");
+            decrease.onclick=function() {
+                startCountdown();
+                clearTimeout(setup);
+            }     
+        </script>
+    </header>
+
+        
+    
+</body>
+</html>

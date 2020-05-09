@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 11 20:18:27 2019
+# Process ID: 50716
+# Current directory: D:/Xilinx/hw/labpre/lab/lab_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent50740 D:\Xilinx\hw\labpre\lab\lab_\lab_.xpr
+# Log file: D:/Xilinx/hw/labpre/lab/lab_/vivado.log
+# Journal file: D:/Xilinx/hw/labpre/lab/lab_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/Xilinx/hw/labpre/lab/lab_/lab_.xpr
+update_compile_order -fileset sources_1

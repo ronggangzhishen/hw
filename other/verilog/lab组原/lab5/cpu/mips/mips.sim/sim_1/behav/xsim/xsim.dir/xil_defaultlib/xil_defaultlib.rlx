@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Xilinx/hw/lab5/cpu/mips/mips.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sim_1/new/tb_mips.v,1558003033,verilog,,,,tb_mips,,,../../../../mips.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1557487446,verilog,,D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,clk_wiz_0,,,../../../../mips.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1557487446,verilog,,D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../mips.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1557489130,verilog,,D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/new/mips.v,,dist_mem_gen_0,,,../../../../mips.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sources_1/new/mips.v,1558710803,verilog,,D:/Xilinx/hw/lab5/cpu/mips/mips.srcs/sim_1/new/tb_mips.v,,BCD7;mips,,,../../../../mips.srcs/sources_1/ip/clk_wiz_0,,,,,

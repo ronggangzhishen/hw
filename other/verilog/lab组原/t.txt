@@ -1,0 +1,158 @@
+数码管亮度不均，改频率；
+手拨时钟组合逻辑后的wire型变量当做posedge clk下载可用
+
+
+
+
+        4'b0000: seg=7'b1000000;
+        4'b0001: seg=7'b1111001;
+        4'b0010: seg=7'b0100100;
+        4'b0011: seg=7'b0110000;
+        4'b0100: seg=7'b0011001;
+        4'b0101: seg=7'b0010010;
+        4'b0110: seg=7'b0000010;
+        4'b0111: seg=7'b1111000;
+        4'b1000: seg=7'b0000000;
+        4'b1001: seg=7'b0010000;
+        4'b1010: seg=7'b0001000;
+        4'b1011: seg=7'b0000011;
+        4'b1100: seg=7'b1000110;
+        4'b1101: seg=7'b0100001;
+        4'b1110: seg=7'b0000110;
+        4'b1111: seg=7'b0001110;
+
+数字显示器
+module main(
+    input [3:0]x,
+    output [7:0]an,
+    output [6:0]seg
+    );
+    
+    assign seg[0]=(x[0]&~x[1]&~x[2]&~x[3])|(~x[0]&~x[1]&x[2]&~x[3]);
+    assign seg[1]=(x[0]&~x[1]&x[2]&~x[3])|(~x[0]&x[1]&x[2]&~x[3]);
+    assign seg[2]=(~x[0]&x[1]&~x[2]&~x[3]);
+    assign seg[3]=(x[0]&~x[1]&~x[2]&~x[3])|(~x[0]&~x[1]&x[2]&~x[3])|(x[0]&x[1]&x[2]&~x[3]);
+    assign seg[4]=(x[0])|(~x[0]&~x[1]&x[2]);
+    assign seg[5]=(x[0]&~x[2]&~x[3])|(x[1]&~x[2]&~x[3])|(x[0]&x[1]&~x[3]);
+    assign seg[6]=(x[0]&x[1]&x[2]&~x[3])|(~x[1]&~x[2]&~x[3]);
+    assign an=8'b11111110;
+endmodule
+
+
+全加器
+module fulladder_dataflow(
+    input [3:0]a,
+    input [3:0]b,
+    input cin,
+    output [3:0]s,
+    output cout
+    );
+    wire ca,cb,cc;
+    assign s[0]=(~a[0]&~b[0]&cin)|(~a[0]&b[0]&~cin)|(a[0]&~b[0]&~cin)|(a[0]&b[0]&cin);
+    assign ca=(a[0]&b[0])|(a[0]&cin)|(b[0]&cin);
+    assign s[1]=(~a[1]&~b[1]&ca)|(~a[1]&b[1]&~ca)|(a[1]&~b[1]&~ca)|(a[1]&b[1]&ca);
+    assign cb=(a[1]&b[1])|(a[1]&cin)|(b[1]&cin);
+    assign s[2]=(~a[2]&~b[2]&cb)|(~a[2]&b[2]&~cb)|(a[2]&~b[2]&~cb)|(a[2]&b[2]&cb);
+    assign cc=(a[2]&b[2])|(a[2]&cin)|(b[2]&cin);
+    assign s[3]=(~a[3]&~b[3]&cc)|(~a[3]&b[3]&~cc)|(a[3]&~b[3]&~cc)|(a[3]&b[3]&cc);
+    assign count=(a[3]&b[3])|(a[3]&cin)|(b[3]&cin);
+endmodule
+
+3to8
+module decoder_3to8_dataflow(
+    input [2:0]x,
+    output [7:0]y
+    );
+    assign y[0]=~x[2]&~x[1]&~x[0];
+    assign y[1]=~x[2]&~x[1]&x[0];
+    assign y[2]=~x[2]&x[1]&~x[0];
+    assign y[3]=~x[2]&x[1]&x[0];
+    assign y[4]=x[2]&~x[1]&~x[0];
+    assign y[5]=x[2]&~x[1]&x[0];
+    assign y[6]=x[2]&x[1]&~x[0];
+    assign y[7]=x[2]&x[1]&x[0];
+endmodule
+
+8to3
+module lab2_2(
+    input [7:0]v,
+    input en_in,
+    output reg [2:0]y,
+    output reg en_out,
+    output reg gs
+    );
+    always @ (*)
+    if(en_in==0)
+    begin
+        if(v[7]==0)       begin y=3'b000;en_out=1;gs=0; end
+        else if(v[6]==0)  begin y=3'b001;en_out=1;gs=0; end
+        else if(v[5]==0)  begin y=3'b010;en_out=1;gs=0; end
+        else if(v[4]==0)  begin y=3'b011;en_out=1;gs=0; end
+        else if(v[3]==0)  begin y=3'b100;en_out=1;gs=0; end
+        else if(v[2]==0)  begin y=3'b101;en_out=1;gs=0; end
+        else if(v[1]==0)  begin y=3'b110;en_out=1;gs=0; end
+        else if(v[0]==0)  begin y=3'b111;en_out=1;gs=0; end
+        else              begin y=3'b111;en_out=0;gs=1; end
+    end
+    else
+    begin
+    y=3'b111;
+    en_out=1;
+    gs=1;
+    end 
+endmodule
+
+
+
+module ROM (lt, eq, gt, a, b);
+    output lt;          //a>b
+    output eq;          //a=b
+    output gt;          //a<b
+    input [1:0]a;
+    input [1:0]b;
+    reg [2:0] ROM [15:0]; // defining 4x2 ROM
+    assign {lt,eq,gt} = ROM[{a,b}];  
+    // reading ROM content at the address ROM_addr
+    initial $readmemb ("D:/ROM_data.txt", ROM, 0, 15);
+    // load ROM content from ROM_data.txt file
+endmodule
+module ROM_tb(
+    );
+    reg [1:0]a;
+    reg [1:0]b;
+    wire lt;
+    wire eq;
+    wire gt;
+    integer k;
+    ROM DUT (.lt(lt),.eq(eq),.gt(gt),.a(a), .b(b));
+        initial
+        begin
+          {a,b} = 0; 
+        for (k=0; k < 16; k=k+1)
+            #5 {a,b}=k;
+        #10;
+        end
+endmodule
+
+
+task ADD; 	
+input A, B, CIN; 	
+output [1:0] C;  
+reg  [1:0] C; 
+reg  S, COUT;  
+    begin
+	S = A ^ B ^ CIN; 	
+	COUT = (A&B) | (A&CIN) | (B&CIN); 	
+	C = {COUT, S}; 
+	end 
+endtask 
+
+function signed [1:0] ADD; 
+    input A, B, CIN;
+    reg Si, COUT;  
+    begin 
+           Si = A ^ B ^ CIN; 
+        COUT = (A&B) | (A&CIN) | (B&CIN); 
+            ADD = {COUT, Si}; 
+    end 
+    endfunction 

@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myand
+INFO: [VRFC 10-311] analyzing module myor
+INFO: [VRFC 10-311] analyzing module mynot
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol nota, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:49]
+INFO: [VRFC 10-2458] undeclared symbol notb, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:50]
+INFO: [VRFC 10-2458] undeclared symbol t1, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:51]
+INFO: [VRFC 10-2458] undeclared symbol t2, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:52]
+INFO: [VRFC 10-2458] undeclared symbol s1, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:53]
+INFO: [VRFC 10-2458] undeclared symbol nots1, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:54]
+INFO: [VRFC 10-2458] undeclared symbol notci, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:55]
+INFO: [VRFC 10-2458] undeclared symbol t3, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:56]
+INFO: [VRFC 10-2458] undeclared symbol t4, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:57]
+INFO: [VRFC 10-2458] undeclared symbol t5, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:59]
+INFO: [VRFC 10-2458] undeclared symbol t6, assumed default net type wire [C:/Users/admin/Desktop/lab_9/lab_9.srcs/sources_1/new/main.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/lab_9/lab_9.srcs/sim_1/new/main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/lab_9/lab_9.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

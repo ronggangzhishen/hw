@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Fri Dec 14 21:39:00 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="55b4427b308c4260b1b75b26ee10caf7" type="ProjectID"/>
+<property name="ProjectIteration" value="32" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="7" type="JavaHandler"/>
+<property name="CoreView" value="1" type="JavaHandler"/>
+<property name="CustomizeCore" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="23" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="20" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="14" type="JavaHandler"/>
+<property name="RecustomizeCore" value="1" type="JavaHandler"/>
+<property name="RefreshDevice" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="14" type="JavaHandler"/>
+<property name="RunImplementation" value="17" type="JavaHandler"/>
+<property name="RunSynthesis" value="23" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="5" type="JavaHandler"/>
+<property name="ShowView" value="23" type="JavaHandler"/>
+<property name="ViewTaskProgramandDebug" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="15" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="Nexys4DDR_Master.xdc, 0, 540" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 454, 273" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 462, 279" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 474, 543" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 478, 64" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 7, 272" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 722, 614" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 8, 61" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, Auto Connect" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, Open Hardware Manager" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, Open target" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, Program device" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_UNDO, undo" value="1" type="GuiResourceData"/>
+<property name="main.v, 106, 595" value="1" type="GuiResourceData"/>
+<property name="main.v, 111, 234" value="1" type="GuiResourceData"/>
+<property name="main.v, 111, 310" value="1" type="GuiResourceData"/>
+<property name="main.v, 111, 632" value="1" type="GuiResourceData"/>
+<property name="main.v, 111, 646" value="1" type="GuiResourceData"/>
+<property name="main.v, 114, 633" value="1" type="GuiResourceData"/>
+<property name="main.v, 116, 513" value="1" type="GuiResourceData"/>
+<property name="main.v, 116, 572" value="1" type="GuiResourceData"/>
+<property name="main.v, 117, 180" value="1" type="GuiResourceData"/>
+<property name="main.v, 117, 561" value="1" type="GuiResourceData"/>
+<property name="main.v, 119, 373" value="1" type="GuiResourceData"/>
+<property name="main.v, 120, 730" value="1" type="GuiResourceData"/>
+<property name="main.v, 126, 105" value="1" type="GuiResourceData"/>
+<property name="main.v, 127, 126" value="1" type="GuiResourceData"/>
+<property name="main.v, 128, 178" value="1" type="GuiResourceData"/>
+<property name="main.v, 133, 254" value="1" type="GuiResourceData"/>
+<property name="main.v, 135, 219" value="1" type="GuiResourceData"/>
+<property name="main.v, 135, 558" value="1" type="GuiResourceData"/>
+<property name="main.v, 136, 275" value="1" type="GuiResourceData"/>
+<property name="main.v, 137, 272" value="1" type="GuiResourceData"/>
+<property name="main.v, 140, 480" value="1" type="GuiResourceData"/>
+<property name="main.v, 145, 294" value="1" type="GuiResourceData"/>
+<property name="main.v, 147, 131" value="1" type="GuiResourceData"/>
+<property name="main.v, 147, 309" value="1" type="GuiResourceData"/>
+<property name="main.v, 147, 90" value="1" type="GuiResourceData"/>
+<property name="main.v, 149, 313" value="1" type="GuiResourceData"/>
+<property name="main.v, 152, 461" value="1" type="GuiResourceData"/>
+<property name="main.v, 153, 295" value="1" type="GuiResourceData"/>
+<property name="main.v, 159, 402" value="1" type="GuiResourceData"/>
+<property name="main.v, 161, 428" value="1" type="GuiResourceData"/>
+<property name="main.v, 170, 270" value="1" type="GuiResourceData"/>
+<property name="main.v, 174, 302" value="1" type="GuiResourceData"/>
+<property name="main.v, 188, 312" value="1" type="GuiResourceData"/>
+<property name="main.v, 2, 48" value="1" type="GuiResourceData"/>
+<property name="main.v, 20, 294" value="1" type="GuiResourceData"/>
+<property name="main.v, 200, 537" value="1" type="GuiResourceData"/>
+<property name="main.v, 206, 424" value="1" type="GuiResourceData"/>
+<property name="main.v, 209, 158" value="1" type="GuiResourceData"/>
+<property name="main.v, 21, 337" value="1" type="GuiResourceData"/>
+<property name="main.v, 22, 336" value="1" type="GuiResourceData"/>
+<property name="main.v, 23, 121" value="1" type="GuiResourceData"/>
+<property name="main.v, 232, 732" value="1" type="GuiResourceData"/>
+<property name="main.v, 234, 195" value="1" type="GuiResourceData"/>
+<property name="main.v, 237, 252" value="1" type="GuiResourceData"/>
+<property name="main.v, 24, 317" value="1" type="GuiResourceData"/>
+<property name="main.v, 240, 282" value="1" type="GuiResourceData"/>
+<property name="main.v, 245, 519" value="1" type="GuiResourceData"/>
+<property name="main.v, 246, 293" value="1" type="GuiResourceData"/>
+<property name="main.v, 25, 276" value="1" type="GuiResourceData"/>
+<property name="main.v, 25, 290" value="1" type="GuiResourceData"/>
+<property name="main.v, 25, 542" value="1" type="GuiResourceData"/>
+<property name="main.v, 26, 104" value="1" type="GuiResourceData"/>
+<property name="main.v, 265, 443" value="1" type="GuiResourceData"/>
+<property name="main.v, 273, 215" value="1" type="GuiResourceData"/>
+<property name="main.v, 274, 458" value="1" type="GuiResourceData"/>
+<property name="main.v, 282, 219" value="1" type="GuiResourceData"/>
+<property name="main.v, 285, 214" value="1" type="GuiResourceData"/>
+<property name="main.v, 291, 225" value="1" type="GuiResourceData"/>
+<property name="main.v, 327, 462" value="1" type="GuiResourceData"/>
+<property name="main.v, 328, 389" value="1" type="GuiResourceData"/>
+<property name="main.v, 330, 577" value="1" type="GuiResourceData"/>
+<property name="main.v, 340, 254" value="1" type="GuiResourceData"/>
+<property name="main.v, 367, 411" value="1" type="GuiResourceData"/>
+<property name="main.v, 37, 64" value="1" type="GuiResourceData"/>
+<property name="main.v, 370, 218" value="1" type="GuiResourceData"/>
+<property name="main.v, 370, 259" value="1" type="GuiResourceData"/>
+<property name="main.v, 40, 196" value="1" type="GuiResourceData"/>
+<property name="main.v, 433, 399" value="1" type="GuiResourceData"/>
+<property name="main.v, 438, 216" value="1" type="GuiResourceData"/>
+<property name="main.v, 46, 141" value="1" type="GuiResourceData"/>
+<property name="main.v, 47, 274" value="1" type="GuiResourceData"/>
+<property name="main.v, 51, 556" value="1" type="GuiResourceData"/>
+<property name="main.v, 53, 161" value="1" type="GuiResourceData"/>
+<property name="main.v, 59, 259" value="1" type="GuiResourceData"/>
+<property name="main.v, 60, 337" value="1" type="GuiResourceData"/>
+<property name="main.v, 61, 616" value="1" type="GuiResourceData"/>
+<property name="main.v, 67, 515" value="1" type="GuiResourceData"/>
+<property name="main.v, 68, 256" value="1" type="GuiResourceData"/>
+<property name="main.v, 687, 352" value="1" type="GuiResourceData"/>
+<property name="main.v, 69, 352" value="1" type="GuiResourceData"/>
+<property name="main.v, 70, 251" value="1" type="GuiResourceData"/>
+<property name="main.v, 72, 292" value="1" type="GuiResourceData"/>
+<property name="main.v, 72, 643" value="1" type="GuiResourceData"/>
+<property name="main.v, 74, 258" value="1" type="GuiResourceData"/>
+<property name="main.v, 78, 296" value="1" type="GuiResourceData"/>
+<property name="main.v, 82, 84" value="1" type="GuiResourceData"/>
+<property name="main.v, 87, 439" value="1" type="GuiResourceData"/>
+<property name="main.v, 93, 615" value="1" type="GuiResourceData"/>
+<property name="main.v, 98, 405" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="1" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

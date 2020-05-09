@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Xilinx/hw/lab2/sort/sort.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Xilinx/hw/lab2/sort/sort.srcs/sim_1/new/tb_sort.v,1553778346,verilog,,,,tb_sort,,,,,,,,
+D:/Xilinx/hw/lab2/sort/sort.srcs/sources_1/new/alu.v,1553777656,verilog,,D:/Xilinx/hw/lab2/sort/sort.srcs/sources_1/new/sort.v,,alu,,,,,,,,
+D:/Xilinx/hw/lab2/sort/sort.srcs/sources_1/new/sort.v,1553778404,verilog,,D:/Xilinx/hw/lab2/sort/sort.srcs/sim_1/new/tb_sort.v,,sort,,,,,,,,

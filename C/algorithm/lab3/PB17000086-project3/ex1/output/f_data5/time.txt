@@ -1,0 +1,5 @@
+data5:
+	insert time:0.000002
+	decrease time:0.000001
+	delete time:0.000059
+	extract time:0.000017

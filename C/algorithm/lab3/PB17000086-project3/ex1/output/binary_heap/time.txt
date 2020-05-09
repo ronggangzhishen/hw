@@ -1,0 +1,25 @@
+data1:
+	insert time:0.000001
+	decrease time:0.000001
+	delete time:0.000001
+	extract time:0.000003
+data2:
+	insert time:0.000001
+	decrease time:0.000001
+	delete time:0.000001
+	extract time:0.000003
+data3:
+	insert time:0.000001
+	decrease time:0.000001
+	delete time:0.000002
+	extract time:0.000004
+data4:
+	insert time:0.000001
+	decrease time:0.000001
+	delete time:0.000001
+	extract time:0.000004
+data5:
+	insert time:0.000001
+	decrease time:0.000001
+	delete time:0.000001
+	extract time:0.000004

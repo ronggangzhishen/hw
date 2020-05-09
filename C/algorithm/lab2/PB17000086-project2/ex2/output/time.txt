@@ -1,0 +1,12 @@
+len1=16,len2=10 ,run_time£º0.000002 sec
+len1=16,len2=20 ,run_time£º0.000003 sec
+len1=16,len2=30 ,run_time£º0.000003 sec
+len1=16,len2=40 ,run_time£º0.000004 sec
+len1=16,len2=50 ,run_time£º0.000005 sec
+len1=16,len2=60 ,run_time£º0.000028 sec
+len1=15,len2=26 ,run_time£º0.000003 sec
+len1=30,len2=26 ,run_time£º0.000005 sec
+len1=45,len2=26 ,run_time£º0.000025 sec
+len1=60,len2=26 ,run_time£º0.000009 sec
+len1=75,len2=26 ,run_time£º0.000027 sec
+len1=90,len2=26 ,run_time£º0.000014 sec

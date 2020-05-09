@@ -1,0 +1,5 @@
+n=5 ,run_time£º0.000001 sec
+n=9 ,run_time£º0.000002 sec
+n=13 ,run_time£º0.000005 sec
+n=17 ,run_time£º0.000014 sec
+n=21 ,run_time£º0.000018 sec

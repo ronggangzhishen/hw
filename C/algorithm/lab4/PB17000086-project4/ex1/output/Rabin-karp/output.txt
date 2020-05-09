@@ -1,0 +1,5 @@
+n=32 m=4 P occurs with shift 22,cost 0.000019 s
+n=256 m=8 P occurs with shift -1,cost 0.000017 s
+n=2048 m=16 P occurs with shift 1435,cost 0.000046 s
+n=16384 m=32 P occurs with shift -1,cost 0.000231 s
+n=131072 m=64 P occurs with shift -1,cost 0.002741 s

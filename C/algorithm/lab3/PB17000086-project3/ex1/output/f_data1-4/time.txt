@@ -1,0 +1,18 @@
+data1:
+	insert time:0.000002
+	decrease time:0.000001
+	delete time:0.000039
+	extract time:0.000017
+data2:
+	insert time:0.000002
+	decrease time:0.000001
+	delete time:0.000030
+	extract time:0.000014
+data3:
+	insert time:0.000003
+	decrease time:0.000001
+	delete time:0.000038
+	extract time:0.000029
+data4:
+	insert time:0.000003
+	decrease time:0.000001

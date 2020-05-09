@@ -1,0 +1,7 @@
+2^3 ,run_time£º0.000002 sec
+2^5 ,run_time£º0.000003 sec
+2^7 ,run_time£º0.000016 sec
+2^9 ,run_time£º0.000073 sec
+2^11 ,run_time£º0.000360 sec
+2^13 ,run_time£º0.001623 sec
+2^15 ,run_time£º0.008637 sec
